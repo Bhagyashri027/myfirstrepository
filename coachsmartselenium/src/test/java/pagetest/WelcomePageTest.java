@@ -34,6 +34,14 @@ public class WelcomePageTest extends BaseTest {
 		ReportUtils.log.pass("Test Pass: Footer Text is correct");
 		
 	}
+	@Test
+	public void verifytext1() {
+		WelcomePage wp= new WelcomePage(driver);
+		String f1= wp.getfooter();
+		Assert.assertEquals(f1, "Elemental Selenium");
+		ReportUtils.log.pass("Test Pass: Footer Text is correct");
+		
+	}
 	
 
 }
